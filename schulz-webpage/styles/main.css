@@ -1,0 +1,186 @@
+/* 
+main-bg: #1D1F1C
+header-bg: #262626
+main-text: #FFB5D9
+header-text: #FF7597
+links: #2FFF00
+*/
+
+body{
+  background-color: #1D1F1C;
+  color: #FFB5D9;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100em;
+  font-family: roboto, arial, sans-serif;
+}
+
+*{
+  text-decoration: none;
+  font-family: roboto, arial, sans-serif;
+}
+
+.nav-bar{
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #262626;
+  color: #FF7597;
+}
+
+.logo img{
+  width: 5em;
+  margin-left: 3em;
+}
+
+.nav-links li{
+  list-style: none;
+  display: inline-block;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.nav-links li a button{
+  font-size: 1.2em;
+  color: #FF7597;
+  transition: 0.25s;
+  border: none;
+  background-color: #262626;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.nav-links li a button:hover{
+  color: #fc0d49;
+  cursor: pointer;
+  background-color: #1D1F1C;
+}
+
+.sidebar{
+  width: 5em;
+  height: 100vh;
+  position: fixed;
+  background-color: #262626;
+  transition: width 0.3s ease;
+}
+
+.sidebar-nav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.sidebar-item{
+  width: 100%;
+}
+
+.sidebar-link{
+  display: flex;
+  align-items: center;
+  height: 5em;
+  color: #FF7597;
+  text-decoration: none;
+  filter: grayscale(100%) brightness(300%);
+  transition: 0.5s;
+}
+
+.sidebar-link:hover{
+  filter: grayscale(0%) opacity(1);
+  background: #1D1F1C;
+  color: #fc0d49;
+}
+
+.link-text{
+  display: none;
+  margin-left: 1em;
+}
+
+.sidebar-link i{
+  min-width: 2em;
+  margin: 0 1.5em;
+}
+
+.sidebar:hover{
+  width: 16em;
+}
+
+.sidebar:hover .link-text{
+  display: block;
+}
+
+.fa-youtube{
+  color: #CD201F;
+}
+
+.fa-podcast{
+  color: #1ED760;
+}
+
+.fa-instagram{
+  color: #cd486b;
+}
+
+.fa-x-twitter{
+  color: white;
+}
+
+main{
+  margin: 2em 7em 2em 9em;
+  padding: 1em;
+}
+
+main h1{
+  text-align: center;
+  margin-left: 2em;
+  margin-top: 0;
+  color: white;
+  padding: 2em;
+}
+
+.city-links{
+  display: block;
+  width: 100%;
+  height: 15em;
+  max-width: 80em;
+  border: none;
+  text-align: left;
+  background-color: #1D1F1C;
+  color: white;
+  border-top: 0.1em gray solid;
+  border-bottom: 0.1em gray solid;
+  border-radius: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  transition: 0.2s;
+}
+
+.city-links h2{
+  font-size: 2em;
+}
+
+.city-links:hover{
+  cursor: pointer;
+  background-color: #262626;
+}
+
+.content-container{
+  display: flex;
+  flex: 1fr auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-links{
+  width: 60em;
+}
+
+.page-photo{
+  width: 50em;
+}
